@@ -7,13 +7,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MetasComponent } from './metas.component';
 import { AlunosComponent } from './alunos.component';
+import {Aluno_login} from './auto-avaliacao_login.component'
 import { AlunoService } from './aluno.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     MetasComponent,
-    AlunosComponent
+    AlunosComponent,
+    Aluno_login
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,10 @@ import { AlunoService } from './aluno.service';
       {
         path: 'alunos',
         component: AlunosComponent
+      },
+      {
+      path: 'auto-avaliacao_login',
+      component: Aluno_login
       }
     ])
   ],

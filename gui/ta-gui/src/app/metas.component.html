@@ -3,14 +3,21 @@
    <th>Nome</th>
    <th>CPF</th>
    <th>e-mail</th>
-   <th>Requisitos</th>
-   <th>Gerência de Configuração</th>
+   <th>Entender motivacao e conceitos de requisitos</th>
+   <th>Entender motivacao e conceitos de gerencia de configuracao</th>
+   <th>Entender motivacao e conceitos de gerencia de projetos</th>
+   <th>Entender motivacao e conceitos de testes</th>
+   <th>Entender motivacao e conceitos de implementacao</th>
 </tr>
 <tr *ngFor="let a of alunos">
    <td>{{a.nome}}</td>
    <td>{{a.cpf}}</td>
    <td>{{a.email}}</td>
-   <td class="meta"><input [(ngModel)]="a.metas['requisitos']" (change)="atualizarAluno(a)"></td>
-   <td class="meta"><input [(ngModel)]="a.metas['gerDeConfiguracao']" (change)="atualizarAluno(a)"></td>
+   <td class="meta"><input [(ngModel)]="a.metas['Entender_motivacao_e_conceitos_de_requisitos']" (change)="atualizarAluno(a)"></td>
+   <td class="meta"><input [(ngModel)]="a.metas['Entender_motivacao_e_conceitos_de_gerencia_de_configuracao']" (change)="atualizarAluno(a)"></td>
+   <td class="meta"><input [(ngModel)]="a.metas['Entender_motivacao_e_conceitos_de_gerencia_de_projetos']" (change)="atualizarAluno(a)"></td>
+   <td class="meta"><input [(ngModel)]="a.metas['Entender_motivacao_e_conceitos_de_testes']" (change)="atualizarAluno(a)"></td>
+   <td class="meta"><input [(ngModel)]="a.metas['Entender_motivacao_e_conceitos_de_implementacao']" (change)="atualizarAluno(a)"></td>
 </tr>
 </table>
+
